@@ -9,6 +9,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
+import com.google.android.material.snackbar.Snackbar;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -64,12 +66,22 @@ public class ReviewsActivity extends AppCompatActivity implements MoviesMVP.View
     }
 
     @Override
-    public void updateData(ViewModel viewModel) {
+    protected void onStop() {
+        super.onStop();
 
+//        presenter.unsubscribeRxJava();
+        listResult.clear();
+        listAdapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void updateData(ViewModel viewModel) {
+        listResult.add(viewModel);
+        listAdapter.notifyItemChanged(listResult.size() - 1);
     }
 
     @Override
     public void showSnackBar(String message) {
-
+        Snackbar.make(rootActivityView, message, Snackbar.LENGTH_LONG).show();
     }
 }
