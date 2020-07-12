@@ -21,11 +21,52 @@ android {
     }
 }
 
+ext {
+    androidx_appcompat = '1.1.0'
+    junit = '4.12'
+    androidx_test_ext = '1.1.1'
+    espresso = '3.2.0'
+    retrofit2 = '2.7.2'
+    gson = '2.8.6'
+    okhttp3_loggin_interceptor = '4.8.0'
+    dagger = '2.15'
+    butterknife = '8.6.0'
+    butterknife_compiler = '8.5.1'
+    rxjava = '2.2.5'
+    rxandroid = '2.0.1'
+}
+
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
+    // Android libs
+    implementation "androidx.appcompat:appcompat:$androidx_appcompat"
+
+    // Android test libs
+    testImplementation "junit:junit:$junit"
+    androidTestImplementation "androidx.test.ext:junit:$androidx_test_ext"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso"
+
+    // Retrofit libs
+    implementation "com.squareup.retrofit2:retrofit:$retrofit2"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit2"
+
+    // GSON libs
+    implementation "com.google.code.gson:gson:$gson"
+
+    // OKHttp3 Logging libs
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp3_loggin_interceptor"
+
+    // Dagger libs
+    implementation "com.google.dagger:dagger-android:$dagger"
+    implementation "com.google.dagger:dagger-android-support:$dagger"
+    annotationProcessor "com.google.dagger:dagger-android-processor:$dagger"
+
+    // Butter knife libs
+    implementation "com.jakewharton:butterknife:$butterknife"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$butterknife_compiler"
+
+    // RxJava and RxAndroid libs
+    implementation "io.reactivex.rxjava2:rxjava:$rxjava"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxandroid"
 }
