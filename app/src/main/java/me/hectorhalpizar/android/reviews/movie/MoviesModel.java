@@ -2,6 +2,7 @@ package me.hectorhalpizar.android.reviews.movie;
 
 import io.reactivex.Observable;
 import io.reactivex.functions.BiFunction;
+import me.hectorhalpizar.android.reviews.http.apimodel.Result;
 
 public class MoviesModel implements MoviesMVP.Model {
 
