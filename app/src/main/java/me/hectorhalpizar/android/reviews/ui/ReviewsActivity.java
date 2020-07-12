@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import me.hectorhalpizar.android.reviews.R;
+import me.hectorhalpizar.android.reviews.ReviewApplication;
 import me.hectorhalpizar.android.reviews.movie.ViewModel;
 import me.hectorhalpizar.android.reviews.movie.MoviesMVP;
 
@@ -26,6 +27,13 @@ public class ReviewsActivity extends AppCompatActivity implements MoviesMVP.View
         setContentView(R.layout.activity_reviews);
 
         ButterKnife.bind(this);
+
+        ((ReviewApplication) getApplication()).getApplicationComponent().inject(this);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
     }
 
     @Override

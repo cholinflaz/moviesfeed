@@ -70,6 +70,7 @@ dependencies {
     implementation "com.google.dagger:dagger-android:$dagger"
     implementation "com.google.dagger:dagger-android-support:$dagger"
     annotationProcessor "com.google.dagger:dagger-android-processor:$dagger"
+    annotationProcessor "com.google.dagger:dagger-compiler:$dagger"
 
     // Butter knife libs
     implementation "com.jakewharton:butterknife:$butterknife"
