@@ -3,7 +3,10 @@ package me.hectorhalpizar.android.reviews.http;
 import dagger.Module;
 import dagger.Provides;
 import okhttp3.OkHttpClient;
+import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 @Module
 public class MovieExtraInfoApisModule {
@@ -12,12 +15,18 @@ public class MovieExtraInfoApisModule {
 
     @Provides
     public OkHttpClient provideClient() {
-        return null;
+        HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
+        interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
+        return new OkHttpClient.Builder().addInterceptor(interceptor).build();
     }
 
     @Provides
     public Retrofit provideRetrofit(String baseUrl, OkHttpClient client) {
-        return null;
+        return new Retrofit.Builder()
+                    .baseUrl(BASE_URL)
+                    .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build();
     }
 
     @Provides

@@ -59,6 +59,7 @@ dependencies {
     // Retrofit libs
     implementation "com.squareup.retrofit2:retrofit:$retrofit2"
     implementation "com.squareup.retrofit2:converter-gson:$retrofit2"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit2"
 
     // GSON libs
     implementation "com.google.code.gson:gson:$gson"
