@@ -84,7 +84,11 @@ public class MoviesRepository implements Repository {
         }).concatMap(new Function<OmdbApi, ObservableSource<String>>() {
             @Override
             public ObservableSource<String> apply(OmdbApi omdbApi) {
-                return Observable.just(omdbApi.getCountry());
+                try {
+                    return Observable.just(omdbApi.getCountry());
+                } catch (NullPointerException e) {
+                    return Observable.just("");
+                }
             }
         }).doOnNext(new Consumer<String>() {
             @Override

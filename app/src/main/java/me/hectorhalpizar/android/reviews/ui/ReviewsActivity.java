@@ -34,8 +34,8 @@ public class ReviewsActivity extends AppCompatActivity implements MoviesMVP.View
     ListAdapter listAdapter;
     List<ViewModel> listResult;
 
-//    @Inject
-//    MoviesMVP.Presenter presenter;
+    @Inject
+    MoviesMVP.Presenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,15 +61,15 @@ public class ReviewsActivity extends AppCompatActivity implements MoviesMVP.View
 
         super.onResume();
 
-//        presenter.setView(this);
-//        presenter.loadData();
+        presenter.setView(this);
+        presenter.loadData();
     }
 
     @Override
     protected void onStop() {
         super.onStop();
 
-//        presenter.unsubscribeRxJava();
+        presenter.unsubscribeRxJava();
         listResult.clear();
         listAdapter.notifyDataSetChanged();
     }
@@ -77,7 +77,7 @@ public class ReviewsActivity extends AppCompatActivity implements MoviesMVP.View
     @Override
     public void updateData(ViewModel viewModel) {
         listResult.add(viewModel);
-        listAdapter.notifyItemChanged(listResult.size() - 1);
+        listAdapter.notifyItemInserted(listResult.size() - 1);
     }
 
     @Override

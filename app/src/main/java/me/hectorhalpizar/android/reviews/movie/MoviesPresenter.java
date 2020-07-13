@@ -57,6 +57,6 @@ public class MoviesPresenter implements MoviesMVP.Presenter {
 
     @Override
     public void setView(MoviesMVP.View view) {
-
+        this.view = view;
     }
 }
