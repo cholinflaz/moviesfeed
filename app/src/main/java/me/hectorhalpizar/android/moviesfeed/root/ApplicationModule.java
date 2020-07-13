@@ -1,4 +1,4 @@
-package me.hectorhalpizar.android.reviews.root;
+package me.hectorhalpizar.android.moviesfeed.root;
 
 import android.app.Application;
 import android.content.Context;

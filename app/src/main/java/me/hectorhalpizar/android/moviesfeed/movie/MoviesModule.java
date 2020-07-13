@@ -1,11 +1,11 @@
-package me.hectorhalpizar.android.reviews.movie;
+package me.hectorhalpizar.android.moviesfeed.movie;
 
 import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
-import me.hectorhalpizar.android.reviews.http.MovieExtraInfoApisService;
-import me.hectorhalpizar.android.reviews.http.MoviesApiService;
+import me.hectorhalpizar.android.moviesfeed.http.MovieExtraInfoApisService;
+import me.hectorhalpizar.android.moviesfeed.http.MoviesApiService;
 
 @Module
 public class MoviesModule {

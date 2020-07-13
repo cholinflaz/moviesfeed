@@ -1,4 +1,4 @@
-package me.hectorhalpizar.android.reviews;
+package me.hectorhalpizar.android.moviesfeed;
 
 import org.junit.Test;
 

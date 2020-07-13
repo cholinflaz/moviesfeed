@@ -1,5 +1,5 @@
 
-package me.hectorhalpizar.android.reviews.http.apimodel;
+package me.hectorhalpizar.android.moviesfeed.http.apimodel;
 
 import java.util.List;
 import com.google.gson.annotations.Expose;

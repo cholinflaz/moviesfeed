@@ -1,4 +1,4 @@
-package me.hectorhalpizar.android.reviews.ui;
+package me.hectorhalpizar.android.moviesfeed.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
@@ -18,12 +18,12 @@ import javax.inject.Inject;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import me.hectorhalpizar.android.reviews.R;
-import me.hectorhalpizar.android.reviews.ReviewApplication;
-import me.hectorhalpizar.android.reviews.movie.ViewModel;
-import me.hectorhalpizar.android.reviews.movie.MoviesMVP;
+import me.hectorhalpizar.android.moviesfeed.R;
+import me.hectorhalpizar.android.moviesfeed.MoviesFeedApplication;
+import me.hectorhalpizar.android.moviesfeed.movie.ViewModel;
+import me.hectorhalpizar.android.moviesfeed.movie.MoviesMVP;
 
-public class ReviewsActivity extends AppCompatActivity implements MoviesMVP.View {
+public class MoviesFeedActivity extends AppCompatActivity implements MoviesMVP.View {
 
     @BindView(R.id.root_activity_view)
     LinearLayout rootActivityView;
@@ -40,11 +40,11 @@ public class ReviewsActivity extends AppCompatActivity implements MoviesMVP.View
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_reviews);
+        setContentView(R.layout.activity_movies_feed);
 
         ButterKnife.bind(this);
 
-        ((ReviewApplication) getApplication()).getApplicationComponent().inject(this);
+        ((MoviesFeedApplication) getApplication()).getApplicationComponent().inject(this);
 
         listResult = new ArrayList<>();
         listAdapter = new ListAdapter(listResult);

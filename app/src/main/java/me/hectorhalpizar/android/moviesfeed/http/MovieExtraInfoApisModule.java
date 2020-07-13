@@ -1,4 +1,4 @@
-package me.hectorhalpizar.android.reviews.http;
+package me.hectorhalpizar.android.moviesfeed.http;
 
 import org.jetbrains.annotations.NotNull;
 

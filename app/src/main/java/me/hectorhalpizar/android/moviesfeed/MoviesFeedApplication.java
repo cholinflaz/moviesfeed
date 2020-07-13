@@ -1,14 +1,14 @@
-package me.hectorhalpizar.android.reviews;
+package me.hectorhalpizar.android.moviesfeed;
 
 import android.app.Application;
 
-import me.hectorhalpizar.android.reviews.http.MovieExtraInfoApisModule;
-import me.hectorhalpizar.android.reviews.movie.MoviesModule;
-import me.hectorhalpizar.android.reviews.root.ApplicationComponent;
-import me.hectorhalpizar.android.reviews.root.ApplicationModule;
-import me.hectorhalpizar.android.reviews.root.DaggerApplicationComponent;
+import me.hectorhalpizar.android.moviesfeed.http.MovieExtraInfoApisModule;
+import me.hectorhalpizar.android.moviesfeed.movie.MoviesModule;
+import me.hectorhalpizar.android.moviesfeed.root.ApplicationComponent;
+import me.hectorhalpizar.android.moviesfeed.root.ApplicationModule;
+import me.hectorhalpizar.android.moviesfeed.root.DaggerApplicationComponent;
 
-public class ReviewApplication extends Application {
+public class MoviesFeedApplication extends Application {
 
     private ApplicationComponent applicationComponent;
 

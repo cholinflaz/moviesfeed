@@ -1,4 +1,4 @@
-package me.hectorhalpizar.android.reviews.movie;
+package me.hectorhalpizar.android.moviesfeed.movie;
 
 public class ViewModel {
     private String movieName;

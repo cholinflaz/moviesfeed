@@ -4,7 +4,7 @@ android {
     compileSdkVersion 29
 
     defaultConfig {
-        applicationId "me.hectorhalpizar.android.reviews"
+        applicationId "me.hectorhalpizar.android.moviesfeed"
         minSdkVersion 26
         targetSdkVersion 29
         versionCode 1

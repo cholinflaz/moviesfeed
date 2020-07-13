@@ -1,4 +1,4 @@
-package me.hectorhalpizar.android.reviews.movie;
+package me.hectorhalpizar.android.moviesfeed.movie;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,11 +7,11 @@ import io.reactivex.Observable;
 import io.reactivex.ObservableSource;
 import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
-import me.hectorhalpizar.android.reviews.http.MovieExtraInfoApisService;
-import me.hectorhalpizar.android.reviews.http.MoviesApiService;
-import me.hectorhalpizar.android.reviews.http.apimodel.OmdbApi;
-import me.hectorhalpizar.android.reviews.http.apimodel.Result;
-import me.hectorhalpizar.android.reviews.http.apimodel.TopRatedMovies;
+import me.hectorhalpizar.android.moviesfeed.http.MovieExtraInfoApisService;
+import me.hectorhalpizar.android.moviesfeed.http.MoviesApiService;
+import me.hectorhalpizar.android.moviesfeed.http.apimodel.OmdbApi;
+import me.hectorhalpizar.android.moviesfeed.http.apimodel.Result;
+import me.hectorhalpizar.android.moviesfeed.http.apimodel.TopRatedMovies;
 
 public class MoviesRepository implements Repository {
 

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Reviews</string>
+    <string name="app_name">Movies Feeds</string>
     <string name="movie_title_placeholder">Avengers</string>
     <string name="movie_country_placeholder">USA</string>
 </resources>

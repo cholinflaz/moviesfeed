@@ -1,4 +1,4 @@
-package me.hectorhalpizar.android.reviews.ui;
+package me.hectorhalpizar.android.moviesfeed.ui;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,8 +12,8 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import me.hectorhalpizar.android.reviews.R;
-import me.hectorhalpizar.android.reviews.movie.ViewModel;
+import me.hectorhalpizar.android.moviesfeed.R;
+import me.hectorhalpizar.android.moviesfeed.movie.ViewModel;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListViewHolder> {
 

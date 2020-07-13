@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="me.hectorhalpizar.android.reviews">
+    package="me.hectorhalpizar.android.moviesfeed">
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
-        android:name=".ReviewApplication"
+        android:name="me.hectorhalpizar.android.moviesfeed.MoviesFeedApplication"
         android:icon="@mipmap/ic_launcher"
         android:usesCleartextTraffic="true"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.ReviewsActivity">
+        <activity android:name="me.hectorhalpizar.android.moviesfeed.ui.MoviesFeedActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

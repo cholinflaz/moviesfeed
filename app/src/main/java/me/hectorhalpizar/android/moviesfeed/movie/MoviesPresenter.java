@@ -1,7 +1,5 @@
-package me.hectorhalpizar.android.reviews.movie;
+package me.hectorhalpizar.android.moviesfeed.movie;
 
-import io.reactivex.Observer;
-import io.reactivex.Scheduler;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.observers.DisposableObserver;

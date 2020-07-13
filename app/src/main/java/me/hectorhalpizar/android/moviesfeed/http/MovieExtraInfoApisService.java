@@ -1,7 +1,7 @@
-package me.hectorhalpizar.android.reviews.http;
+package me.hectorhalpizar.android.moviesfeed.http;
 
 import io.reactivex.Observable;
-import me.hectorhalpizar.android.reviews.http.apimodel.OmdbApi;
+import me.hectorhalpizar.android.moviesfeed.http.apimodel.OmdbApi;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 
